@@ -4,7 +4,6 @@ rvm:
   - 2.6
   - 2.5
   - 2.4
-  - jruby-9.2.8.0
 gemfile:
   - Gemfile
 env:
@@ -26,10 +25,8 @@ matrix:
     - gemfile: gemfiles/Gemfile.base
       rvm: 2.4
     - gemfile: gemfiles/Gemfile.edge
-      rvm: 2.6
   allow_failures:
     - gemfile: gemfiles/Gemfile.edge
-    - rvm: jruby-9.2.8.0
 
 before_install:
   - gem update --system
